@@ -22,7 +22,7 @@ export const updateQuality_Conjured = (item: Item) => {
 
 export const updateQuality_Concert = (item: Item) => {
     item = increaseQualityItem(item, (item.sellIn <= 5 ? 3 : item.sellIn <= 10 ? 2 : 1));
-    item.quality = item.sellIn < 0 ? 0 : item.quality;
+    item.quality = item.sellIn <= 0 ? 0 : item.quality;
 
     return item;
 }
