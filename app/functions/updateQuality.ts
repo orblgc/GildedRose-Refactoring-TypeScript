@@ -50,7 +50,7 @@ const decreaseQualityItem = (item: Item, coeff: number) => { // coefficient => q
     return item;
 
 }
-const increaseQualityItem = (item: Item, coeff: number) => { // coefficient => quality increasing multiplier 
+const increaseQualityItem = (item: Item, coeff: number) => { // coefficient => quality increasing multiplier
     for (let i = 0; i < coeff; i++) {
         item.quality = increaseQuality(item.quality);
     }
