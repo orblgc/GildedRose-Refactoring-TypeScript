@@ -41,7 +41,7 @@ export const updateQuality_Sulfuras = (item: Item) => {
 //#endregion
 
 //#region Common Functions
-const decreaseQualityItem = (item: Item, coeff: number) => { // coefficient => quality decreasing multiplier 
+const decreaseQualityItem = (item: Item, coeff: number) => { // coefficient => quality decreasing multiplier
     for (let i = 0; i < coeff; i++) {
         item.quality = decreaseQuality(item.quality);
     }
